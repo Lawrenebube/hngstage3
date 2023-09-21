@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +17,71 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.gallery {
+   display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    place-content: center;
+    min-height: 100vh;
+    width: 84.3em;
+    margin: auto;
+    background-color: #F1F1F1;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 60em;
+  padding: 1em 0em 2em;
+
+}
+.searchbox {
+  height: 2em;
+  background-color: transparent;
+  width: 20em;
+  display: flex; 
+  align-items: center;
+  border: 0.1em solid #c6c1c1;
+  border-radius: 0.2em;
+}
+.searchbox input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  padding-left: 2em;
+  font-size: 1.2rem;
+}
+.searchbox img {
+  height: 1.5em;
+}
+.imageGrid {
+  display: grid;
+  gap: 0.5em;
+  max-width: 50em;
+  margin: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  place-content: center;
+
+}
+@media screen and (max-width:768px) {
+.imageGrid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 0.5em;
+}
+}
+.images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+ img {
+  height: 17em;
+  width: 16em;
+}
+.tagNotFound {
+  text-align: center;
+  color: red;
+}
+
+
